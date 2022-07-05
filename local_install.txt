@@ -1,0 +1,7 @@
+python3 -m venv airflow_env
+pip install apache-airflow==2.3.2 --constraint https://raw.githubusercontent.com/apache/airflow/constraints-2.3.2/constraints-3.7.txt
+export AIRFLOW_HOME=.
+
+
+#mkdir -p ./dags ./logs ./plugins
+#echo -e "AIRFLOW_UID=$(id -u)" > .env
